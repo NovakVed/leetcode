@@ -1,4 +1,4 @@
-package leetcode.validParentheses;
+package validParentheses;
 
 import java.util.Stack;
 

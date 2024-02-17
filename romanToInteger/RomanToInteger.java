@@ -1,4 +1,4 @@
-package leetcode.romanToInteger;
+package romanToInteger;
 
 /**
  * 13. RomanToInteger

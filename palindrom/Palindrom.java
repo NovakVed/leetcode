@@ -1,4 +1,4 @@
-package leetcode.palindrom;
+package palindrom;
 
 /**
  * 9. Palindrome Number

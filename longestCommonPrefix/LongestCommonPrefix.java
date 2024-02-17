@@ -1,4 +1,4 @@
-package leetcode.longestCommonPrefix;
+package longestCommonPrefix;
 
 /**
  * 14. LongestCommonPrefix
