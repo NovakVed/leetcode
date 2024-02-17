@@ -3,6 +3,10 @@ package leetcode.validParentheses;
 import java.util.HashMap;
 import java.util.Stack;
 
+/**
+ * 20. ValidParantheses - best solution
+ * {@link} https://leetcode.com/problems/valid-parentheses/description/
+ */
 public class ValidParanthesesBestSolution {
     public static void main(String[] args) {
         System.out.println(isValidParentheses("){"));

@@ -1,7 +1,8 @@
 package leetcode.longestCommonPrefix;
 
 /**
- * LongestCommonPrefix
+ * 14. LongestCommonPrefix
+ * {@link} https://leetcode.com/problems/longest-common-prefix/description/
  */
 class LongestCommonPrefix {
     public static void main(String[] args) {

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * twoSum
+ * 1. Two Sum {@link} https://leetcode.com/problems/two-sum/description/
  */
 class TwoSum {
     public static void main(String[] args) {

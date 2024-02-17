@@ -1,7 +1,8 @@
 package leetcode.palindrom;
 
 /**
- * IsPalindrom
+ * 9. Palindrome Number
+ * {@link} https://leetcode.com/problems/palindrome-number/description/
  */
 class Palindrom {
     public static void main(String[] args) {
