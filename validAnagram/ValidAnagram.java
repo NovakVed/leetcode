@@ -1,5 +1,8 @@
 package validAnagram;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 242. Valid Anagram
  * {@link} https://leetcode.com/problems/valid-anagram/description/
@@ -13,20 +16,17 @@ public class ValidAnagram {
 	}
 
 	public static boolean isAnagram(final String s, final String t) {
-		if (s.length() != t.length())
-			return false;
+		Map<Character, Integer> count = new HashMap<>();
 
-		int[] count = new int[26];
-
-		for (int i = 0; s.length() > i; i++) {
-			count[s.charAt(i) - 'a']++;
+		for (char c : s.toCharArray()) {
+			count.put(c, count.getOrDefault(c, 0) + 1);
 		}
 
-		for (int i = 0; t.length() > i; i++) {
-			count[t.charAt(i) - 'a']--;
+		for (char c : t.toCharArray()) {
+			count.put(c, count.getOrDefault(c, 0) - 1);
 		}
 
-		for (int val : count) {
+		for (int val : count.values()) {
 			if (val != 0) {
 				return false;
 			}
@@ -62,24 +62,4 @@ public class ValidAnagram {
 
 // return true;
 // }
-// }
-
-// public static boolean isAnagram(final String s, final String t) {
-// Map<Character, Integer> count = new HashMap<>();
-
-// for (char c : s.toCharArray()) {
-// count.put(c, count.getOrDefault(c, 0) + 1);
-// }
-
-// for (char c : t.toCharArray()) {
-// count.put(c, count.getOrDefault(c, 0) - 1);
-// }
-
-// for (int val : count.values()) {
-// if (val != 0) {
-// return false;
-// }
-// }
-
-// return true;
 // }
