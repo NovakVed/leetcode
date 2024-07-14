@@ -1,0 +1,26 @@
+package twoSum;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+class TwoSumPractice {
+    public void main(String[] args) {
+        int target = 9;
+        int[] arr = new int[] { 2, 7, 11, 15 };
+
+        Arrays.stream(twoSum(arr, target)).forEach(System.out::println);
+    }
+
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> sum = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (sum.containsKey(nums[i])) {
+                return new int[] { sum.get(nums[i]), i };
+            }
+            sum.put(target - nums[i], i);
+        }
+
+        return new int[] {};
+    }
+}
