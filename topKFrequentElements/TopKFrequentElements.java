@@ -1,8 +1,13 @@
 package topKFrequentElements;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * TopKFrequentElements
@@ -19,11 +24,21 @@ public class TopKFrequentElements {
     }
 
     public static int[] topKFrequent(int[] nums, int k) {
+        Set<Integer> visited = new HashSet<>();
         Map<Integer, Integer> map = new HashMap<>();
-        for (int i : nums) {
-            map.put(i, map.getOrDefault(i, 0) + 1);
+        for (var i : nums) {
+            if (visited.add(i)) {
+                map.put(i, map.getOrDefault(i, 0) + 1);
+            }
         }
 
-        return null;
+        List<Integer> result = new ArrayList<>();
+        for (var i : visited) {
+            if (map.get(i) > k) {
+                result.add(i);
+            }
+        }
+
+        return ;
     }
 }

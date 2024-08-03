@@ -1,10 +1,10 @@
-package romanToInteger;
+package romanToArabics;
 
 /**
  * 13. RomanToInteger
  * {@link} https://leetcode.com/problems/roman-to-integer/description/
  */
-class RomanToInteger {
+class RomanToArabics {
     public static void main(String[] args) {
         String s = "MCMXCIV";
         System.out.println(romanToInt(s));
@@ -12,20 +12,19 @@ class RomanToInteger {
 
     static int romanToInt(String s) {
         int sum = 0;
-        char next = 0;
         char previous = 0;
         for (int i = 0; i < s.length(); i++) {
-            next = s.charAt(i);
+            char current = s.charAt(i);
 
-            if (previous == 'I' && (next == 'V' || next == 'X')) {
+            if (previous == 'I' && (current == 'V' || current == 'X')) {
                 sum -= 2;
-            } else if (previous == 'X' && (next == 'L' || next == 'C')) {
+            } else if (previous == 'X' && (current == 'L' || current == 'C')) {
                 sum -= 20;
-            } else if (previous == 'C' && (next == 'D' || next == 'M')) {
+            } else if (previous == 'C' && (current == 'D' || current == 'M')) {
                 sum -= 200;
             }
 
-            switch (next) {
+            switch (current) {
                 case 'I':
                     sum += 1;
                     break;
@@ -51,7 +50,7 @@ class RomanToInteger {
                     break;
             }
 
-            previous = next;
+            previous = current;
         }
 
         return sum;
