@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-class GroupAnagrams3 {
+class GroupAnagramsAscii3 {
 
     public static void main(String[] args) {
         String[] strs = new String[] { "eat", "tea", "tan", "ate", "nat", "bat" };
