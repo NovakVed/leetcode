@@ -4,7 +4,7 @@ import java.util.Stack;
 
 /**
  * 20. ValidParantheses
- * {@link} https://leetcode.com/problems/valid-parentheses/description/
+ * {@link} <a href="https://leetcode.com/problems/valid-parentheses/description/">20. ValidParantheses</a>
  */
 public class ValidParentheses {
 

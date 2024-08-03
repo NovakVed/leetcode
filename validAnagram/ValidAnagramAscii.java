@@ -2,7 +2,7 @@ package validAnagram;
 
 /**
  * 242. Valid Anagram
- * {@link} https://leetcode.com/problems/valid-anagram/description/
+ * {@link} <a href="https://leetcode.com/problems/valid-anagram/description/">242. Valid Anagram</a>
  */
 public class ValidAnagramAscii {
     public void main(String[] args) {

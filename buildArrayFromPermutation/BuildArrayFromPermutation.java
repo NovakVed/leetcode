@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 /**
  * 1920. Build Array from Permutation
- * {@link} https://leetcode.com/problems/build-array-from-permutation/description/
+ * {@link} <a href="https://leetcode.com/problems/build-array-from-permutation/description/">1920. Build Array from Permutation</a>
  */
 public class BuildArrayFromPermutation {
     public static void main(String[] args) {

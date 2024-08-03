@@ -2,7 +2,6 @@ package topKFrequentElements;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -11,8 +10,8 @@ import java.util.Set;
 
 /**
  * 347. TopKFrequentElements
- * 
- * @link https://leetcode.com/problems/top-k-frequent-elements/description/
+ *
+ * @link <a href="https://leetcode.com/problems/top-k-frequent-elements/description/">347. TopKFrequentElements</a>
  */
 public class TopKFrequentElements {
 

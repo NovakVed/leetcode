@@ -6,7 +6,9 @@ import java.util.Map;
 
 /**
  * 49. Group Anagrams
- * {@link} https://leetcode.com/problems/group-anagrams/description/
+ * {@link} <a href=
+ * "https://leetcode.com/problems/group-anagrams/description/">49. Group
+ * Anagrams</a>
  */
 public class GroupAnagramsAscii {
 

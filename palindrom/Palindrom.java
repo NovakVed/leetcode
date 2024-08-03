@@ -2,7 +2,7 @@ package palindrom;
 
 /**
  * 9. Palindrome Number
- * {@link} https://leetcode.com/problems/palindrome-number/description/
+ * {@link} <a href="https://leetcode.com/problems/palindrome-number/description/">9. Palindrome Number</a>
  */
 class Palindrom {
     public static void main(String[] args) {

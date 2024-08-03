@@ -5,15 +5,15 @@ import java.util.Map;
 
 /**
  * 242. Valid Anagram
- * {@link} https://leetcode.com/problems/valid-anagram/description/
+ * {@link} <a href="https://leetcode.com/problems/valid-anagram/description/">242. Valid Anagram</a>
  */
 public class ValidAnagramMap {
-    public void main(String[] args) {
+    public static void main(String[] args) {
         String s = "aacc", t = "ccac";
         System.out.println(isAnagram(s, t));
     }
 
-    public boolean isAnagram(String s, String t) {
+    public static boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
             return false;
         }

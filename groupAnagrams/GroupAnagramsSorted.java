@@ -6,16 +6,18 @@ import java.util.Map;
 
 /**
  * 49. Group Anagrams
- * {@link} https://leetcode.com/problems/group-anagrams/description/
+ * {@link} <a href=
+ * "https://leetcode.com/problems/group-anagrams/description/">49. Group
+ * Anagrams</a>
  */
 class GroupAnagramsSorted {
-    public void main(String[] args) {
+    public static void main(String[] args) {
         String[] strs = new String[] { "eat", "tea", "tan", "ate", "nat", "bat" };
         List<List<String>> groups = groupAnagrams(strs);
         groups.forEach(System.out::println);
     }
 
-    public List<List<String>> groupAnagrams(String[] strs) {
+    public static List<List<String>> groupAnagrams(String[] strs) {
         Map<String, List<String>> map = new HashMap<>();
 
         for (String string : strs) {

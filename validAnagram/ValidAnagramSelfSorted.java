@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * 242. Valid Anagram
- * {@link} https://leetcode.com/problems/valid-anagram/description/
+ * {@link} <a href="https://leetcode.com/problems/valid-anagram/description/">42. Valid Anagram</a>
  */
 class ValidAnagramSelfSorted {
     void main(String[] args) {

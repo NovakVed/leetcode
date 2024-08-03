@@ -5,11 +5,12 @@ import java.util.Stack;
 
 /**
  * 20. ValidParantheses - best solution
- * {@link} https://leetcode.com/problems/valid-parentheses/description/
+ * {@link} <a href="https://leetcode.com/problems/valid-parentheses/description/">20. ValidParantheses - best solution</a>
  */
 public class ValidParanthesesBestSolution {
     public static void main(String[] args) {
-        System.out.println(isValidParentheses("){"));
+        String example = "){";
+        System.out.println(isValidParentheses(example));
     }
 
     static boolean isValidParentheses(String parentheses) {

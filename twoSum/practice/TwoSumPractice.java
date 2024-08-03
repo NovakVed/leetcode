@@ -5,7 +5,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 1. Two Sum {@link} https://leetcode.com/problems/two-sum/description/
+ * 1. Two Sum
+ * {@link} <a href="https://leetcode.com/problems/two-sum/description/">1. Two Sum</a>
  */
 class TwoSumPractice {
     public void main(String[] args) {

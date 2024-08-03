@@ -11,8 +11,8 @@ class ContainsDuplicate2 {
 
     private static boolean containsDuplicate(int[] nums) {
         Set<Integer> covered = new HashSet<>();
-        for (int i = 0; i < nums.length; i++) {
-            if (!covered.add(nums[i])) {
+        for (int num : nums) {
+            if (!covered.add(num)) {
                 return true;
             }
         }

@@ -2,7 +2,7 @@ package longestCommonPrefix;
 
 /**
  * 14. LongestCommonPrefix
- * {@link} https://leetcode.com/problems/longest-common-prefix/description/
+ * {@link} <a href="https://leetcode.com/problems/longest-common-prefix/description/">14. LongestCommonPrefix</a>
  */
 class LongestCommonPrefix {
     public static void main(String[] args) {
