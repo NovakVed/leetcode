@@ -11,6 +11,7 @@ import java.util.Set;
 
 /**
  * 347. TopKFrequentElements
+ * 
  * @link https://leetcode.com/problems/top-k-frequent-elements/description/
  */
 public class TopKFrequentElements {
@@ -38,6 +39,6 @@ public class TopKFrequentElements {
             }
         }
 
-        return;
+        return new int[] {};
     }
 }
