@@ -4,19 +4,20 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * 1. Two Sum
- * {@link} <a href="https://leetcode.com/problems/two-sum/description/">1. Two Sum</a>
- */
-class TwoSumPractice {
-    public void main(String[] args) {
+class TwoSum2 {
+    public static void main(String[] args) {
+        int[] nums = new int[] { 2, 7, 11, 15 };
         int target = 9;
-        int[] arr = new int[] { 2, 7, 11, 15 };
+        int[] indices = twoSum(nums, target);
 
-        Arrays.stream(twoSum(arr, target)).forEach(System.out::println);
+        Arrays.stream(indices).forEach(System.out::println);
     }
 
-    public int[] twoSum(int[] nums, int target) {
+    // {
+    // (9-2)->7: (position)->0
+    // }
+
+    private static int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> sum = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             if (sum.containsKey(nums[i])) {
