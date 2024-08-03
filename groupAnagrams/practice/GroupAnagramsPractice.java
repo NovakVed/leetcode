@@ -5,6 +5,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * 49. Group Anagrams
+ * {@link} https://leetcode.com/problems/group-anagrams/description/
+ */
 class GroupAnagramsPractice {
     public void main(String[] args) {
         String[] strs = new String[] { "eat", "tea", "tan", "ate", "nat", "bat" };

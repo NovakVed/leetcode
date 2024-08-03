@@ -2,6 +2,10 @@ package validAnagram;
 
 import java.util.Arrays;
 
+/**
+ * 242. Valid Anagram
+ * {@link} https://leetcode.com/problems/valid-anagram/description/
+ */
 class ValidAnagramSorted {
     public void main(String[] args) {
         String s = "ca", t = "ac";

@@ -4,6 +4,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 49. Group Anagrams
+ * {@link} https://leetcode.com/problems/group-anagrams/description/
+ */
 class GroupAnagramsSorted {
     public void main(String[] args) {
         String[] strs = new String[] { "eat", "tea", "tan", "ate", "nat", "bat" };

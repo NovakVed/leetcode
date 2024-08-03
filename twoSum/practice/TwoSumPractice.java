@@ -4,6 +4,9 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 1. Two Sum {@link} https://leetcode.com/problems/two-sum/description/
+ */
 class TwoSumPractice {
     public void main(String[] args) {
         int target = 9;

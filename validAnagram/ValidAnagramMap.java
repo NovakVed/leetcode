@@ -3,6 +3,10 @@ package validAnagram;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 242. Valid Anagram
+ * {@link} https://leetcode.com/problems/valid-anagram/description/
+ */
 public class ValidAnagramMap {
     public void main(String[] args) {
         String s = "aacc", t = "ccac";

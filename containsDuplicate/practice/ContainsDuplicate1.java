@@ -3,6 +3,10 @@ package practice;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * 217. Contains Duplicate
+ * {@link} https://leetcode.com/problems/contains-duplicate/description/
+ */
 class ContainsDuplicate1 {
     public void main(String[] args) {
         int[] arr = new int[] { 1, 2, 3, 1 };
