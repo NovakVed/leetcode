@@ -17,7 +17,8 @@ class GroupAnagrams2 {
 
     // ascii + sets
     // 89 -> nat, tan
-    //
+
+    // O(n^2*k) n-> num of elements in array | k->each char in string
 
     private static List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> result = new ArrayList<>();
