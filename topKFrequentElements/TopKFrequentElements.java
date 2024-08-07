@@ -9,9 +9,7 @@ import java.util.Map;
 /**
  * 347. TopKFrequentElements
  *
- * @link <a href=
- *       "https://leetcode.com/problems/top-k-frequent-elements/description/">347.
- *       TopKFrequentElements</a>
+ * @link <a href="https://leetcode.com/problems/top-k-frequent-elements/description/">347.TopKFrequentElements</a>
  */
 public class TopKFrequentElements {
 
