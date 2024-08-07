@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+// works only if given array of elements is already sorted
 class TopKFrequentElementsForSortedArray {
     public static void main(String[] args) {
         int[] nums = new int[] { 1, 1, 1, 2, 2, 3 };
