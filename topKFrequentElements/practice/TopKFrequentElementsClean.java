@@ -16,8 +16,8 @@ class TopKFrequentElementsClean {
     }
 
     public static int[] topKFrequent(int[] nums, int k) {
-        Map<Integer, Integer> countMap = new HashMap<>();
         List<List<Integer>> frequencies = new ArrayList<>();
+        Map<Integer, Integer> countMap = new HashMap<>();
 
         // Initialize the frequency list with empty lists
         for (int i = 0; i <= nums.length; i++) {
