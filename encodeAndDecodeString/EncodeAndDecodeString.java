@@ -3,6 +3,13 @@ package encodeAndDecodeString;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 394. Encode and Decode Strings
+ *
+ * @link <a href=
+ *       "https://leetcode.com/problems/encode-and-decode-strings/description/">271.
+ *       Encode and Decode Strings</a>
+ */
 class EncodeAndDecodeString {
     public static void main(String[] args) {
         List<String> strs = List.of("neet", "code", "love", "you");
