@@ -2,20 +2,18 @@ package decodeString.wrong;
 
 /**
  * 394. Decode String - WRONG!
- *
+ * this is wrong because I assumed that string will always be given in this
+ * format "3[a]2[bc]"!!
+ * 
  * @link <a href="https://leetcode.com/problems/decode-string/description/">394.
  *       Decode String</a>
  */
-
-// this is wrong because I assumed that string will always be given in this
-// format "3[a]2[bc]"!!
 class DecodeStringWrong {
     public static void main(String[] args) {
         String s = "3[a]2[bc]";
 
         // Output: "aaabcbc"
         System.out.println(decodeString(s));
-
     }
 
     public static String decodeString(String s) {
