@@ -1,10 +1,12 @@
-package palindrom;
+package palindromNumber;
 
 /**
  * 9. Palindrome Number
- * {@link} <a href="https://leetcode.com/problems/palindrome-number/description/">9. Palindrome Number</a>
+ * {@link} <a href=
+ * "https://leetcode.com/problems/palindrome-number/description/">9. Palindrome
+ * Number</a>
  */
-class Palindrom {
+class PalindromNumber {
     public static void main(String[] args) {
         int x = 121;
         System.out.println(isPalindrome(x));
