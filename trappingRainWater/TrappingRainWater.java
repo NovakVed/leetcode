@@ -1,0 +1,5 @@
+package trappingRainWater;
+
+class TrappingRainWater {
+
+}
