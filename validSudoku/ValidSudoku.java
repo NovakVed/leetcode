@@ -7,7 +7,8 @@ import java.util.Set;
  * 36. Valid Sudoku
  *
  * @link <a
- *       href=https://leetcode.com/problems/valid-sudoku/?source=submission-noac">36.
+ *       href=
+ *       "https://leetcode.com/problems/valid-sudoku/?source=submission-noac">36.
  *       Valid Sudoku</a>
  */
 class ValidSudoku {
