@@ -1,4 +1,4 @@
-package palindromNumber;
+package palindromeNumber;
 
 /**
  * 9. Palindrome Number
@@ -6,7 +6,7 @@ package palindromNumber;
  * "https://leetcode.com/problems/palindrome-number/description/">9. Palindrome
  * Number</a>
  */
-class PalindromNumber {
+class PalindromeNumber {
     public static void main(String[] args) {
         int x = 121;
         System.out.println(isPalindrome(x));

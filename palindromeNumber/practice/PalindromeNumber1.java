@@ -1,6 +1,6 @@
-package palindromNumber.practice;
+package palindromeNumber.practice;
 
-class PalindromNumber1 {
+class PalindromeNumber1 {
 
     public static void main(String[] args) {
         int x = -121;
