@@ -4,10 +4,12 @@ import java.util.HashMap;
 import java.util.Stack;
 
 /**
- * 20. ValidParantheses - best solution
- * {@link} <a href="https://leetcode.com/problems/valid-parentheses/description/">20. ValidParantheses - best solution</a>
+ * 20. ValidParentheses - best solution
+ * {@link} <a href=
+ * "https://leetcode.com/problems/valid-parentheses/description/">20.
+ * ValidParentheses - best solution</a>
  */
-public class ValidParanthesesBestSolution {
+public class ValidParenthesesBestSolution {
     public static void main(String[] args) {
         String example = "){";
         System.out.println(isValidParentheses(example));
