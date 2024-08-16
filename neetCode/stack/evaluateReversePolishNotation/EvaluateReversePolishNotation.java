@@ -1,4 +1,4 @@
-package neetCode.evaluateReversePolishNotation;
+package neetCode.stack.evaluateReversePolishNotation;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package neetCode.evaluateReversePolishNotation;
+package neetCode.stack.evaluateReversePolishNotation;
 
 /**
  * 150. Evaluate Reverse Polish Notation

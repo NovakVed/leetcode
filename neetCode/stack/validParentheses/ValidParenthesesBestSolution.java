@@ -1,4 +1,4 @@
-package neetCode.stacks.validParentheses;
+package neetCode.stack.validParentheses;
 
 import java.util.HashMap;
 import java.util.Stack;

@@ -1,4 +1,4 @@
-package neetCode.stacks.minStack;
+package neetCode.stack.minStack;
 
 /**
  * 155. Min Stack

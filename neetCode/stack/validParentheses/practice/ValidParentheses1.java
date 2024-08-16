@@ -1,4 +1,4 @@
-package neetCode.stacks.validParentheses.practice;
+package neetCode.stack.validParentheses.practice;
 
 import java.util.Map;
 import java.util.Stack;
