@@ -33,5 +33,4 @@ class LongestConsecutiveSequence {
         }
         return longestSequence;
     }
-
 }
