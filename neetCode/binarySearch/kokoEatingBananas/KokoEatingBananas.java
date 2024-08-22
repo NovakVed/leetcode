@@ -6,6 +6,8 @@ import java.util.Arrays;
  * 875. Koko Eating Bananas
  * {@link} <a href="https://leetcode.com/problems/koko-eating-bananas/">875.
  * Koko Eating Bananas</a>
+ * Time complexity = O(log(max(p)) * p)
+ * Memory complexity = O(1)
  */
 public class KokoEatingBananas {
     public void main(String[] args) {
@@ -36,4 +38,8 @@ public class KokoEatingBananas {
 
         return res;
     }
+
+    // private long mathCeilDiv(long x, long y) {
+    //     return (x + y - 1) / y;
+    // }
 }
