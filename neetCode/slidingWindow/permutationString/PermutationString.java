@@ -2,6 +2,13 @@ package neetCode.slidingWindow.permutationString;
 
 import java.util.Arrays;
 
+/**
+ * 567. Permutation in String
+ * {@link} <a href=
+ * "https://leetcode.com/problems/permutation-in-string/">567. Permutation in
+ * String</a>
+ * Time complexity: O(26*n)
+ */
 class PermutationString {
     public static void main(String[] args) {
         String s1 = "adc";
