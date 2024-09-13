@@ -3,6 +3,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * 981. Time Based Key-Value Store
+ * {@link} <a href=
+ * "https://leetcode.com/problems/time-based-key-value-store/">981. Time Based
+ * Key-Value Store</a>
+ */
 class TimeMap {
 
     private Map<String, List<Pair<String, Integer>>> keyStore;

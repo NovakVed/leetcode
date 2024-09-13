@@ -1,5 +1,11 @@
 package neetCode.slidingWindow.longestRepeatingCharacterReplacement;
 
+/**
+ * 424. Longest Repeating Character Replacement
+ * {@link} <a href=
+ * "https://leetcode.com/problems/longest-repeating-character-replacement/">424.
+ * Longest Repeating Character Replacement</a>
+ */
 class LongestRepeatingCharacterReplacement {
     public static void main(String[] args) {
         String s = "AABABBA";

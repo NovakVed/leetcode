@@ -1,5 +1,11 @@
 package neetCode.binarySearch.searchInRotatedSortedArray;
 
+/**
+ * 33. Search in Rotated Sorted Array
+ * {@link} <a href=
+ * "https://leetcode.com/problems/search-in-rotated-sorted-array/">33. Search in
+ * Rotated Sorted Array</a>
+ */
 class SearchInRotatedSortedArray {
     public void main(String[] args) {
         int[] nums = new int[] { 5, 1, 3 };
