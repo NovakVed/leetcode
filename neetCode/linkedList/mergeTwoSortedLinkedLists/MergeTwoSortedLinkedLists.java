@@ -57,14 +57,10 @@ class MergeTwoSortedLinkedLists {
             node = node.next;
         }
 
-        while (list1 != null) {
+        if (list1 != null) {
             node.next = list1;
-            list1 = list1.next;
-        }
-
-        while (list2 != null) {
+        } else {
             node.next = list2;
-            list2 = list2.next;
         }
 
         return dummy.next;
