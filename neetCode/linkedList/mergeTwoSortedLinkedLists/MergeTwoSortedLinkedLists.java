@@ -1,5 +1,7 @@
 package neetCode.linkedList.mergeTwoSortedLinkedLists;
 
+import neetCode.linkedList.ListNode;
+
 /**
  * 21. Merge Two Sorted Lists
  * {@link} <a href=
@@ -7,22 +9,6 @@ package neetCode.linkedList.mergeTwoSortedLinkedLists;
  * Lists</a>
  */
 class MergeTwoSortedLinkedLists {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
 
     public static void main(String[] args) {
         // Create a linked list: 0 -> 1 -> 2 -> 3
@@ -38,7 +24,7 @@ class MergeTwoSortedLinkedLists {
         ListNode merged = mergeTwoLists(list1, list2);
 
         // Print the reversed linked list
-        printList(merged);
+        ListNode.printList(merged);
     }
 
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
@@ -64,15 +50,5 @@ class MergeTwoSortedLinkedLists {
         }
 
         return dummy.next;
-    }
-
-    // Helper method to print the linked list
-    public static void printList(ListNode head) {
-        ListNode current = head;
-        while (current != null) {
-            System.out.print(current.val + " ");
-            current = current.next;
-        }
-        System.out.println();
     }
 }
