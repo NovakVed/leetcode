@@ -1,5 +1,7 @@
 package neetCode.linkedList.reverseLinkedList;
 
+import neetCode.linkedList.ListNode;
+
 /**
  * 206. Reverse Linked List
  * {@link} <a href=
@@ -7,23 +9,6 @@ package neetCode.linkedList.reverseLinkedList;
  * List</a>
  */
 class ReverseLinkedList {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
     public static void main(String[] args) {
         // Create a linked list: 0 -> 1 -> 2 -> 3
         ListNode head = new ListNode(0);
@@ -32,10 +17,10 @@ class ReverseLinkedList {
         head.next.next.next = new ListNode(3);
 
         // Reverse the list and capture the new head
-        ListNode reversedHead = reverseList(head);
+        reverseList(head);
 
         // Print the reversed linked list
-        printList(reversedHead);
+        ListNode.printList(head);
     }
 
     // Function to reverse the linked list
@@ -52,15 +37,5 @@ class ReverseLinkedList {
         }
 
         return previous;
-    }
-
-    // Helper method to print the linked list
-    public static void printList(ListNode head) {
-        ListNode current = head;
-        while (current != null) {
-            System.out.print(current.val + " ");
-            current = current.next;
-        }
-        System.out.println();
     }
 }
