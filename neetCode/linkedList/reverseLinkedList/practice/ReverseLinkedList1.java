@@ -1,14 +1,8 @@
-package neetCode.linkedList.reverseLinkedList;
+package neetCode.linkedList.reverseLinkedList.practice;
 
 import neetCode.linkedList.ListNode;
 
-/**
- * 206. Reverse Linked List
- * {@link} <a href=
- * "https://leetcode.com/problems/reverse-linked-list/">206. Reverse Linked
- * List</a>
- */
-class ReverseLinkedList {
+class ReverseLinkedList1 {
     public static void main(String[] args) {
         // Create a linked list: 0 -> 1 -> 2 -> 3
         ListNode head = new ListNode(0);
@@ -25,15 +19,12 @@ class ReverseLinkedList {
 
     // Function to reverse the linked list
     public static ListNode reverseList(ListNode head) {
-        ListNode current = head;
-        ListNode previous = null;
-        ListNode nextCurrent = null;
-
+        ListNode previous = null, current = head, next = null;
         while (current != null) {
-            nextCurrent = current.next;
+            next = current.next;
             current.next = previous;
             previous = current;
-            current = nextCurrent;
+            current = next;
         }
 
         return previous;

@@ -9,11 +9,12 @@ import neetCode.linkedList.ListNode;
  */
 public class ReorderList {
     public static void main(String[] args) {
-        // Create a linked list: 0 -> 1 -> 2 -> 3
-        ListNode head = new ListNode(0);
-        head.next = new ListNode(1);
-        head.next.next = new ListNode(2);
-        head.next.next.next = new ListNode(3);
+        // Create a linked list: 0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next = new ListNode(5);
 
         // Reverse the list and capture the new head
         reorderList(head);
@@ -23,6 +24,35 @@ public class ReorderList {
     }
 
     public static void reorderList(ListNode head) {
+        ListNode slow = head, fast = head.next;
 
+        // find middle
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        ListNode second = slow.next;
+        ListNode prev = slow.next = null;
+
+        // reverse second half
+        while (second != null) {
+            ListNode tmp = second.next;
+            second.next = prev;
+            prev = second;
+            second = tmp;
+        }
+
+        // merge two halfs
+        ListNode first = head;
+        second = prev;
+        while (second != null) {
+            ListNode tmp1 = first.next;
+            ListNode tmp2 = second.next;
+            first.next = second;
+            second.next = tmp1;
+            first = tmp1;
+            second = tmp2;
+        }
     }
 }
