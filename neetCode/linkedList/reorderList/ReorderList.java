@@ -9,7 +9,7 @@ import neetCode.linkedList.ListNode;
  */
 public class ReorderList {
     public static void main(String[] args) {
-        // Create a linked list: 0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
+        // Create a linked list: 1 -> 2 -> 3 -> 4 -> 5
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
         head.next.next = new ListNode(3);
