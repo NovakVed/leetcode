@@ -6,7 +6,7 @@ import java.util.List;
 public class EncodeAndDecodeString2 {
     public static void main(String[] args) {
         List<String> strs = List.of("neet", "code", "love", "you");
-        String encode = encode(strs);
+        String encode = encode(strs); // 4#neet4#code4#love3#you
         List<String> decode = decode(encode);
         System.out.println(decode.toString());
     }
