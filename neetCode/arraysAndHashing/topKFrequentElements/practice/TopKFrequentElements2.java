@@ -6,10 +6,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class TopKFrequentElements1 {
+public class TopKFrequentElements2 {
     public static void main(String[] args) {
-        int[] nums = new int[] { 1, 1, 1, 2, 2, 3 };
+        int[] nums = { 1, 1, 1, 2, 2, 3 };
         int k = 2;
+
         System.out.println(Arrays.toString(topKFrequent(nums, k)));
     }
 
@@ -25,17 +26,15 @@ public class TopKFrequentElements1 {
             count.put(num, count.getOrDefault(num, 0) + 1);
         }
 
-        for (Map.Entry<Integer, Integer> bucket : count.entrySet()) {
-            buckets[bucket.getValue()].add(bucket.getKey());
+        for (Map.Entry<Integer, Integer> entry : count.entrySet()) {
+            buckets[entry.getValue()].add(entry.getKey());
         }
 
         var result = new int[k];
         int index = 0;
-        for (int i = buckets.length - 1; i > 0 && index < k; i--) {
-            for (int bucket : buckets[i]) {
+        for (int i = buckets.length - 1; i > 0 && index < k; i--)
+            for (int bucket : buckets[i])
                 result[index++] = bucket;
-            }
-        }
 
         return result;
     }
