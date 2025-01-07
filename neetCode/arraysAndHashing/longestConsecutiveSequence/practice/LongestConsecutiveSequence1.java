@@ -18,7 +18,7 @@ public class LongestConsecutiveSequence1 {
         for (int num : nums) {
             if (!sequence.contains(num - 1)) {
                 int i = 1;
-                while (sequence.contains(++num)) {
+                while (sequence.contains(num + i)) {
                     i++;
                 }
                 longestSequence = Math.max(i, longestSequence);
