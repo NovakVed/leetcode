@@ -9,13 +9,12 @@ public class MaximumAverageSubarray1 {
 
     private static double findMaxAverage(int[] nums, int k) {
         int l = 0;
-        float maxAverage = 0;
-        float currentSum = 0;
+        double currentSum = 0;
 
         for (int r = 0; r < k; r++)
             currentSum += nums[r];
 
-        maxAverage = currentSum / k;
+        double maxAverage = currentSum / k;
 
         for (int r = k; r < nums.length; r++) {
             currentSum += nums[r];
