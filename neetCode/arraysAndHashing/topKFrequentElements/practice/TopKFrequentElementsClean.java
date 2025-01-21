@@ -20,14 +20,12 @@ class TopKFrequentElementsClean {
         Map<Integer, Integer> countMap = new HashMap<>();
 
         // Initialize the frequency list with empty lists
-        for (int i = 0; i <= nums.length; i++) {
+        for (int i = 0; i <= nums.length; i++)
             frequencies.add(new ArrayList<>());
-        }
 
         // Count the frequency of each element
-        for (int num : nums) {
+        for (int num : nums)
             countMap.put(num, countMap.getOrDefault(num, 0) + 1);
-        }
 
         // Group numbers by their frequency
         for (Map.Entry<Integer, Integer> entry : countMap.entrySet()) {
@@ -38,9 +36,8 @@ class TopKFrequentElementsClean {
 
         // Collect the top k frequent elements
         List<Integer> topKFrequent = new ArrayList<>();
-        for (int i = frequencies.size() - 1; i > 0 && topKFrequent.size() < k; i--) {
+        for (int i = frequencies.size() - 1; i > 0 && topKFrequent.size() < k; i--)
             topKFrequent.addAll(frequencies.get(i));
-        }
 
         // Convert the list to an array and return the first k elements
         return topKFrequent.stream().limit(k).mapToInt(i -> i).toArray();
