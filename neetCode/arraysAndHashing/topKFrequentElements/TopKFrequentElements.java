@@ -25,17 +25,14 @@ public class TopKFrequentElements {
         List<Integer>[] frequencies = new List[nums.length + 1];
         Map<Integer, Integer> count = new HashMap<>();
 
-        for (int i = 0; i < frequencies.length; i++) {
+        for (int i = 0; i < frequencies.length; i++)
             frequencies[i] = new ArrayList<>();
-        }
 
-        for (int num : nums) {
+        for (int num : nums)
             count.put(num, count.getOrDefault(num, 0) + 1);
-        }
 
-        for (Map.Entry<Integer, Integer> entry : count.entrySet()) {
+        for (Map.Entry<Integer, Integer> entry : count.entrySet())
             frequencies[entry.getValue()].add(entry.getKey());
-        }
 
         int[] result = new int[k];
         int index = 0;
