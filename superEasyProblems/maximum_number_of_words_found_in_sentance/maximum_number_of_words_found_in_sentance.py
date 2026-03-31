@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def mostWordsFound(self, sentences: List[str]) -> int:
         max_words = 0
