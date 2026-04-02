@@ -12,7 +12,7 @@ class Solution:
     
     def isPalindrome(self, word: str) -> bool:
         i, j = 0, len(word) - 1
-        while i <= j:
+        while i < j:
             if word[i] != word[j]:
                 return False
             i += 1
