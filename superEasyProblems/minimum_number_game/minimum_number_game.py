@@ -1,3 +1,5 @@
+# 2974. Minimum Number Game
+# https://leetcode.com/problems/minimum-number-game/description/?envType=problem-list-v2&envId=prshgx6i
 import sys
 from typing import List
 
