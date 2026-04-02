@@ -1,3 +1,5 @@
+# 2108. Find First Palindromic String in the Array
+# https://leetcode.com/problems/find-first-palindromic-string-in-the-array/description/?envType=problem-list-v2&envId=prshgx6i
 from typing import List
 
 
