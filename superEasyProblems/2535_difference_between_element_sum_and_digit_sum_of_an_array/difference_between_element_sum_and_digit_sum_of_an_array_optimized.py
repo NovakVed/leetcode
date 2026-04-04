@@ -9,7 +9,7 @@ class Solution:
         digit_sum = 0
         for num in nums:
             element_sum += num
-            while num:
+            while num: # 0 is falsy
                 digit_sum += num % 10 # takes the last digit
                 num //= 10 # removes the last digit
         return abs(element_sum - digit_sum)
