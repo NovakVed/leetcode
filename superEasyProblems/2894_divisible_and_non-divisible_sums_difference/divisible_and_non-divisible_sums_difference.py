@@ -1,3 +1,6 @@
+# 2894. Divisible and Non-divisible Sums Difference
+# https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/description/
+# optimized explanation: https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/solutions/6759736/divisible-and-non-divisible-sums-differe-sb65/
 class Solution:
     def differenceOfSums(self, n: int, m: int) -> int:
         num1 = 0
