@@ -3,13 +3,7 @@
 # Explanation: https://leetcode.com/problems/to-lower-case/?envType=problem-list-v2&envId=prshgx6i
 class Solution:
     def toLowerCase(self, s: str) -> str:
-        result = ''
-        for c in s:
-            if ord(c) >= 65 and ord(c) <= 90:
-                result += chr(ord(c) + 32)
-            else:
-                result += c
-        return result
+        return s.lower()
 
 s = Solution()
 print(s.toLowerCase('VEKI'))
