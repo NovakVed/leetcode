@@ -1,5 +1,8 @@
 # 3024. Type of Triangle
 # https://leetcode.com/problems/type-of-triangle/?envType=problem-list-v2&envId=prshgx6i
+from typing import List
+
+
 class Solution:
     def triangleType(self, nums: List[int]) -> str:
         if (
