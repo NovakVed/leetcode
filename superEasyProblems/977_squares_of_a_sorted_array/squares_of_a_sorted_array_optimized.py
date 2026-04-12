@@ -1,5 +1,6 @@
 # 977. Squares of a Sorted Array
 # https://leetcode.com/problems/squares-of-a-sorted-array/description/?envType=problem-list-v2&envId=prshgx6i
+# Optimized solution: https://leetcode.com/problems/squares-of-a-sorted-array/solutions/4807685/beats-100-users-cjavapythonjavascript-3-ax3bb/?envType=problem-list-v2&envId=prshgx6i
 from typing import List
 
 # Time complexity: O(n): You traverse the array once with the two pointers, and each element is processed exactly once.
