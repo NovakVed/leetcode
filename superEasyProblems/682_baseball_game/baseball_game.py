@@ -6,15 +6,15 @@ from typing import List
 class Solution:
     def calPoints(self, operations: List[str]) -> int:
         stack = []
-        for i in range(0, len(operations)):
-            if operations[i] == 'C':
+        for op in operations:
+            if op == 'C':
                 stack.pop()
-            elif operations[i] == 'D':
+            elif op == 'D':
                 stack.append(stack[-1] * 2)
-            elif operations[i] == '+':
+            elif op == '+':
                 stack.append(stack[-2] + stack[-1])
             else:
-                stack.append(int(operations[i]))
+                stack.append(int(op))
         return sum(stack)
 
 s = Solution()
